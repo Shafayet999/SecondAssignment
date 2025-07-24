@@ -148,8 +148,8 @@
             display: flex;
         }
         .second {
-            margin-left: -200px;
-            margin-top: -140px;
+            margin-left: -190px;
+            margin-top: -133px;
         }
         .impo {
             margin-top: 100px;
@@ -205,10 +205,95 @@
         }
         .lastPart {
             display: flex;
-            width: 300px;
+            width: 250px;
             justify-content: space-around;
             align-items: center;
         }
+        .overlay-text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Noto Serif", serif;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        .overlay-text1 {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "inter", serif;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            border-bottom: 1px solid white;
+        }
+        .one {
+            position: relative;
+        }
+        .two {
+            position: relative;
+        }
+        .three {
+            position: relative;
+        }
+        .overlay-text2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "noto", serif;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        .overlay-text3 {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 30px;    
+            font-weight: bold;
+            font-family: "inter";
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+            border-bottom: 2px solid white;
+        }
+        .overlay-text4 {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 55px;    
+            font-weight: bold;
+            font-family: "Noto Serif", serif; 
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        .chobi {
+            position: relative;
+        }
+        .overlay-form {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            font-family: "Noto Serif", serif; 
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+
+        input::placeholder {
+            font-size: 15px;
+            font-family: "inter";
+        }
+        
 
 
 
@@ -408,7 +493,7 @@
                     <img src="assets/flower-store.png" alt="">
                     </div>
                     <div class="second">
-                    <img style="width: 300px;" src="assets/trusted-badge.png" alt="">
+                        <img style="width: 300px;" src="assets/trusted-badge.png" alt="">
                     </div>
                 </div>
                 <div class="motivation">
@@ -460,14 +545,23 @@
             <div class="grid">
                 <div class="left">
                     <div class="one" style="margin-bottom: 42px;">
-                <img style="width: 462px; height: auto; border-radius: 20px;" src="assets/deal-bloom.png" alt="">
+                        <img style="width: 462px; height: auto; border-radius: 20px;
+                        filter: brightness(65%);" src="assets/deal-bloom.png" alt="">
+                        <div class="overlay-text">60% Off | Bloom Plant</div>
+                        <div class="overlay-text1">Shop Now</div>
                 </div>
                 <div class="two">
-                <img style="width: 462px; height: auto; border-radius: 20px;" src="assets/deal-ana.png" alt="">
+                <img style="width: 462px; height: auto; border-radius: 20px;
+                filter: brightness(65%);" src="assets/deal-ana.png" alt="">
+                <div class="overlay-text">30% Off | Ana  Plant</div>
+                <div class="overlay-text1">Shop Now</div>
                 </div>
                 </div>
                 <div class="three">
-                    <img style="width: 976px; height: auto; border-radius: 20px;" src="assets/deal-zabo.png" alt="">
+                    <img style="width: 976px; height: auto; border-radius: 20px;
+                    filter: brightness(65%);" src="assets/deal-zabo.png" alt="">
+                    <div class="overlay-text2">25% Off | Zabo Plant</div>
+                <div class="overlay-text3">Shop Now</div>
                 </div>
             </div>
         </div>
@@ -475,6 +569,24 @@
         <div class="fullArea">
             <div class="chobi">
                 <img style="width: 100%; height: 550px;" src="assets/news-letter-bg.png" alt="">
+                <div class="overlay-text4">Join the colorful Bunch</div>
+                <div class="overlay-form">
+                    <div class="form">
+                        <input style="width: 690px; height: 45px; padding-left: 20px; border: none;" type="email" placeholder="Write email" required>
+                    </div>
+                    <div class="links">
+                        <button style="background-color: #E95A08;
+                        width: 180px; color: white;
+                        font-family: inter;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        font-size: 16px;
+                        padding-bottom: 5px;
+                        border: none;">Subscribe</button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
