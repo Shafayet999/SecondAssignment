@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+        }   
+        
+        .noto {
+            font-family: "Noto Serif", serif;
+            font-optical-sizing: auto;
+        }
+
+
+        body {
+            background-color: #F5F8FF;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .links {
+            display: flex;
+            gap: 48px;
+        }
+        .cart {
+            display: flex;
+            align-items: center;
+        }
+        .navlinks a {
+            gap: 48px;
+            font-size: 23px;
+            text-decoration: none;
+        }
+        .navlinks {
+            list-style: none;
+            display: flex;
+            gap: 48px;
+        }
+        .text {
+            color: #000000;
+            font-size: 23px;
+        }
+
+
+
+        .headings {
+            margin-top: 225px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 100px;
+            height: 480px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .texts {
+            display: flex;
+            align-items: flex-end;
+        }
+        .pic {
+            display: flex;
+            align-items: flex-end;
+        }
+        .advertisement {
+            height: 1300px;
+            margin-top: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .ad {
+            margin-top: 0px;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 15px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 290px);
+            grid-template-rows: repeat(2, 500px);
+            justify-content: space-between;
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            row-gap: 8px;
+        }
+        .name {
+            text-align: center;
+        }
+        .price {
+            text-align: center;
+        }
+        .buy {
+            height: 50px;
+            background-color: #E95A08;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .emotion {
+            margin-left: 200px;
+            margin-right: 200px;
+            height: 600px;
+            margin-top: 220px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            column-gap: 75px;
+        }
+        ul {
+            text-decoration: none;
+            list-style-type:disc;
+        }
+        .custom-list {
+            list-style-type: disc;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 25px;
+        }
+        .pics {
+            display: flex;
+        }
+        .second {
+            margin-left: -200px;
+            margin-top: -140px;
+        }
+        .impo {
+            margin-top: 100px;
+        }
+
+        .one {
+            grid-area: one;
+        }
+        .two {
+            grid-area: two;
+        }
+        .three {
+            grid-area: three;
+            margin-left: -90px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas:
+            "one three"
+            "two three"
+            ;
+            justify-content: space-between;
+        }
+        .gridArea {
+            height: 700px;
+            margin-top: 80px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .prothomPart {
+            display: flex;
+            flex-direction: column;
+            justify-content:first baseline;
+        }
+        .secondPart > a {
+            color: rgba(0, 0, 0, 0.829);
+            font-size: 20px;
+        }
+        .secondPart {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        .intro {
+            margin-top: 70px;
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .lastPart {
+            display: flex;
+            width: 300px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="image">
+                <img style="width: 160px; height: auto;" src="assets/logo.png" alt="">
+            </div>
+            <div class="links">
+                <ul class="navlinks">
+                    <li><a href="" class="inter" style="font-weight: bold;
+                    color: #252432;">Home</a></li>
+                    <li><a href="" class="inter" style="color: #8987A1;">Shop</a></li>
+                    <li><a href="" class="inter" style="color: #8987A1;">About us</a></li>
+                    
+                </ul>
+                <div class="cart" style="display: flex">
+                        <img src="assets/cart-shopping-solid-full.svg" alt=""
+                        style="height: 24px; width: 24px;">
+                        <div class="text inter">
+                            Cart ($56)
+                        </div>
+                    </div>
+            </div>
+        </nav>
+        <div class="headings">
+            <div class="texts" style="width: 580px;">
+                <div class="headlines">
+                    <div class="firstLine" style="display: flex; column-gap: 25px;">
+                        <h1 class="noto" style="font-weight: bold; font-size: 80px; margin: 0;">ALWAYS</h1>
+                        <h1 class="noto" style="font-weight: bold; font-size: 80px; color: #E95A08; margin: 0;">FRESH</h1>
+                    </div>
+                    <h1 class="noto" style="font-weight: bold; font-size: 80px; color: #E95A08; margin: 0;">FLOWERS</h1>
+                    <p class="inter" style="font-size: 26px; color: rgba(0, 0, 0, 0.5); margin-top: 10px;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+                </div>
+            </div>
+            <div class="pic">
+                <img style="width: 670px; height: auto;" src="assets/hero-flower.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="advertisement">
+            <div class="ad">
+                <h1 class="noto" style="font-weight: bold; font-size: 68px; color: #E95A08; margin-bottom: 15px;">Our</h1>
+                <h1 class="noto" style="font-weight: bold; font-size: 68px; margin-bottom: 20px;">Plants</h1>
+            </div>
+            <div class="lines">
+                <p class="inter" style="font-size: 25px; color: rgba(0, 0, 0, 0.74); margin: 0 auto; width: 888px;
+                text-align: center;">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="flower">
+                        <img style="width: 290px; height: auto;" src="assets/sample-flower-image.png" alt="">
+                    </div>
+                    <div class="name inter" style="font-size: 22px; font-weight: 500; color: #111111;">
+                        Lily Blossom
+                    </div>
+                    <div class="price inter" style="font-weight: bold; font-size: 25px; color: #111111;">
+                        20 USD
+                    </div>
+                    <div class="buy inter">
+                        <a href="">ADD TO CART</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="emotion">
+            <div class="content">
+                <div class="pics">
+                    <div class="first">
+                    <img src="assets/flower-store.png" alt="">
+                    </div>
+                    <div class="second">
+                    <img style="width: 300px;" src="assets/trusted-badge.png" alt="">
+                    </div>
+                </div>
+                <div class="motivation">
+                    <div class="heads">
+                        <h1 class="noto" style="font-weight: bold; font-size: 69px;">
+                            Flower & Plants Lover
+                        </h1>
+                    </div>
+                    <div class="para">
+                        <ul class="custom-list">
+                            <li>
+                                <p class="inter" style="font-size: 23px; color: rgba(0, 0, 0, 0.5);">
+                                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="custom-list">
+                            <li>
+                                <p class="inter" style="font-size: 23px; color: rgba(0, 0, 0, 0.5);">
+                                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul class="custom-list">
+                            <li>
+                                <p class="inter" style="font-size: 23px; color: rgba(0, 0, 0, 0.5);">
+                                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="deals" style="display: flex; flex-direction: column; align-items: center;">
+            <div class="impo noto" style="display: flex; justify-content: center; gap: 30px;
+            font-size: 40px; font-weight: bold;">
+                <h1 style="color: #E95A08; margin-bottom: 16px;">Latest</h1>
+                <h1 style="margin-bottom: 16px;">Deals</h1>
+            </div>
+            <div class="parap inter" style="font-size: 25px; color: rgba(0, 0, 0, 0.5); width: 888px;
+            text-align: center;">
+                <p style="margin-top: 0px;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            </div>
+        </div>
+
+        <div class="gridArea">
+            <div class="grid">
+                <div class="left">
+                    <div class="one" style="margin-bottom: 42px;">
+                <img style="width: 462px; height: auto; border-radius: 20px;" src="assets/deal-bloom.png" alt="">
+                </div>
+                <div class="two">
+                <img style="width: 462px; height: auto; border-radius: 20px;" src="assets/deal-ana.png" alt="">
+                </div>
+                </div>
+                <div class="three">
+                    <img style="width: 976px; height: auto; border-radius: 20px;" src="assets/deal-zabo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="fullArea">
+            <div class="chobi">
+                <img style="width: 100%; height: 550px;" src="assets/news-letter-bg.png" alt="">
+            </div>
+        </div>
+    </header>
+
+
+    <footer>
+        <div class="intro">
+            <div class="prothomPart">
+                <div class="lastIamge">
+                    <img style="width: 150px; height: auto;" src="assets/logo.png" alt="">
+                </div>
+                <div class="lastLines" style="width: 360px;">
+                    <p class="inter" style="font-size: 30px; color: rgba(0, 0, 0, 0.5);">
+                        Indulge your senses with the beauty and fragrance of our fresh flower shop. 
+                    </p>
+                </div>
+            </div>
+            <div class="secondPart">
+                <a class="inter" href="">Home</a>
+                <a class="inter" href="">About Us</a>
+                <a class="inter" href="">Blog</a>
+                <a class="inter" href="">FAQ</a>
+                <a class="inter" href="">Contact Us</a>
+            </div>
+            <div class="secondPart">
+                <a class="inter" href="">Features</a>
+                <a class="inter" href="">Pricing</a>
+                <a class="inter" href="">Privacy Policy</a>
+                <a class="inter" href="">Terms of Service</a>
+                <a class="inter" href="">Help Center</a>
+            </div>
+            <div class="lastPart">
+                <div class="linkedin">
+                    <img src="assets/icon-linkedin.png" alt="">
+                </div>
+                <div class="x">
+                    <img src="assets/icon-twitter.png" alt="">
+                </div>
+                <div class="facebook">
+                    <img src="assets/icon-facebook.png" alt="">
+                </div>
+                <div class="youtube">
+                    <img src="assets/icon-youtube.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
